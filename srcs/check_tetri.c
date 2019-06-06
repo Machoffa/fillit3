@@ -6,7 +6,7 @@
 /*   By: machoffa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 12:35:30 by machoffa          #+#    #+#             */
-/*   Updated: 2019/06/05 05:34:01 by machoffa         ###   ########.fr       */
+/*   Updated: 2019/06/06 04:05:51 by mreveret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int		pos_final_check(char *str, char ***tab, int k)
 	l = 0;
 	m = 0;
 	i = -1;
-	tab[k] = ft_strsplit(str, '\n');
+	ft_strtab(str, &tab[k]);
 	while (tab[k][++i] && (j = -1))
 		while (tab[k][i][++j])
 			if (tab[k][i][j] == '#')

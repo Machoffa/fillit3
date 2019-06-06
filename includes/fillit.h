@@ -6,7 +6,7 @@
 /*   By: machoffa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/19 14:21:08 by machoffa          #+#    #+#             */
-/*   Updated: 2019/06/05 04:44:23 by machoffa         ###   ########.fr       */
+/*   Updated: 2019/06/06 03:43:15 by mreveret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ void	fillit(int fd, char ***tab);
 int		globalcheck(int fd, char ***tab, int k);
 int		pos_final_check(char *str, char ***tab, int k);
 void	tab_opti(char ***tab, int k);
+void	ft_strtab(char const *s, char ***tab);
 char	**tab_opti2(char ***tab, int k);
 void	tab_opti3(char ***tab, int k);
 char	**clean_map(int count, char **map);

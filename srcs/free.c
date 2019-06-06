@@ -44,3 +44,37 @@ void	free_tab_split(char **tab)
 	}
 	free(tab);
 }
+
+void	ft_strtab(char const *s, char ***tab)
+{
+	int		k;
+	int		j;
+	int		i;
+
+	j = 0;
+	i = 0;
+	if (!(*tab = (char **)malloc(sizeof(char *) * 6)))
+		return ;
+	while (s[i])
+	{
+		k = 0;
+		if (!(*tab[j] = (char*)malloc(sizeof(char) * 5)))
+			return ;
+		while ( s[i] && s[i] != '\n')
+		{
+			*tab[j][k] = s[i];
+			i++;
+			k++;
+		}
+		if (s[i] == '\n')
+		{
+			i++;
+			j++;
+		}
+		*tab[j][k] = '\0';
+	//	ft_putstr(*tab[j]);
+	}
+	*tab[j] = NULL;
+//	ft_putchar(s[i]);
+//	ft_print_words_tables(*tab);
+}

@@ -6,13 +6,13 @@
 #    By: machoffa <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/27 14:18:33 by machoffa          #+#    #+#              #
-#    Updated: 2019/06/05 05:34:18 by machoffa         ###   ########.fr        #
+#    Updated: 2019/06/06 03:34:46 by mreveret         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = fillit
 
-CFLAGS = -Wall -Wextra -Werror -I.
+CFLAGS = -g3 -Wall -Wextra -Werror -I.
 
 DIR = includes
 
